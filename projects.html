@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects — Oluwadarasimi Olowe</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
   <script src="theme.js"></script>
 </head>
 <body>
-
-  <nav>
-    <div class="nav-inner">
-      <a href="index.html" class="logo">darasimi<span>.qa</span></a>
-      <div class="nav-right">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="journey.html">Journey</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="artifacts.html">Artifacts</a></li>
-          <li><a href="plan.html">Future</a></li>
-        </ul>
-        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">💻</button>
-      </div>
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">darasimi<span>.qa</span></a>
+    <div class="nav-right">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="journey.html">Journey</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="plan.html">Future</a></li>
+      </ul>
+      <button class="theme-btn" id="theme-btn">💻</button>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <main>
-    <div class="page-header">
-      <div class="eyebrow">Projects</div>
-      <h1>What I Tested</h1>
-      <p>Real products, real bugs, real impact.</p>
+<main>
+  <div class="page-header">
+    <div class="section-label">Projects</div>
+    <h1>What I Tested</h1>
+    <p>Two real products, tested across multiple stages.</p>
+  </div>
+
+  <div class="card" style="margin-bottom:1.5rem;">
+    <div style="display:flex; justify-content:space-between;
+         align-items:flex-start; flex-wrap:wrap; gap:0.75rem;
+         margin-bottom:0.9rem;">
+      <div>
+        <div class="section-label" style="margin-bottom:0.3rem;">Project 1</div>
+        <h2 style="font-size:1.4rem; font-weight:800; letter-spacing:-0.5px;">
+          SkillBridge
+        </h2>
+      </div>
+      <span class="verdict v-warn">Staging / Partial Production</span>
     </div>
-
-    <div class="card" style="margin-bottom:2rem;">
-      <div style="display:flex; justify-content:space-between;
-           align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
-        <div>
-          <div class="eyebrow" style="margin-bottom:0.4rem;">Project 1</div>
-          <h2 style="font-size:1.5rem; font-weight:800; letter-spacing:-0.5px;">
-            SkillBridge
-          </h2>
-        </div>
-        <span class="verdict verdict-premium">Staging → Partial Production</span>
-      </div>
-      <p style="color:var(--text-muted); margin-bottom:1rem; line-height:1.8;">
-        SkillBridge is a verified talent-pipeline platform connecting job-ready
-        candidates with employers through skill assessments and verified profiles.
-        As the sole QA engineer on the team, I was responsible for testing core
-        functionality across authentication, assessments, and role-based access.
-      </p>
-      <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.8;">
-        I built and ran an automated API regression suite of 78 requests across
-        11 modules using Postman and Newman CLI — covering auth, session handling,
-        settings, assessments, and role-based access guards with both positive and
-        negative test cases. I also executed a manual test pass on the Verified
-        Profile feature against an 11-point acceptance charter, logging defects
-        with severity, reproduction steps, and environment data.
-      </p>
-      <div class="skills-wrap">
-        <span class="skill-tag">Postman</span>
-        <span class="skill-tag">Newman CLI</span>
-        <span class="skill-tag">API Testing</span>
-        <span class="skill-tag">k6</span>
-        <span class="skill-tag">Lighthouse</span>
-        <span class="skill-tag">Accessibility Testing</span>
-        <span class="skill-tag">Performance Testing</span>
-        <span class="skill-tag">Bug Reporting</span>
-        <span class="skill-tag">OWASP Top 10</span>
-        <span class="skill-tag">WCAG</span>
-      </div>
+    <p style="color:var(--text-muted); margin-bottom:0.9rem; line-height:1.8;">
+      SkillBridge is a talent pipeline platform that connects candidates 
+      with employers through verified skill assessments. I was the only QA 
+      engineer on the team.
+    </p>
+    <p style="color:var(--text-muted); margin-bottom:1.4rem; line-height:1.8;">
+      I built and ran an automated API regression suite of 78 requests across 
+      11 modules using Postman and Newman CLI. This covered auth, session 
+      handling, settings, assessments, and role-based access with positive and 
+      negative test cases. I also did a manual test pass on the Verified Profile 
+      feature against an 11-point acceptance charter, logged defects with 
+      severity and reproduction steps, and tested accessibility and API security 
+      in later stages.
+    </p>
+    <div class="skill-list">
+      <span class="skill">Postman</span>
+      <span class="skill">Newman CLI</span>
+      <span class="skill">k6</span>
+      <span class="skill">Lighthouse</span>
+      <span class="skill">API Testing</span>
+      <span class="skill">Accessibility Testing</span>
+      <span class="skill">Performance Testing</span>
+      <span class="skill">OWASP Top 10</span>
+      <span class="skill">WCAG</span>
     </div>
+  </div>
 
-    <div class="card">
-      <div style="display:flex; justify-content:space-between;
-           align-items:flex-start; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
-        <div>
-          <div class="eyebrow" style="margin-bottom:0.4rem;">Project 2</div>
-          <h2 style="font-size:1.5rem; font-weight:800; letter-spacing:-0.5px;">
-            ClinSight
-          </h2>
-        </div>
-        <span class="verdict verdict-pass">MVP Testing</span>
+  <div class="card">
+    <div style="display:flex; justify-content:space-between;
+         align-items:flex-start; flex-wrap:wrap; gap:0.75rem;
+         margin-bottom:0.9rem;">
+      <div>
+        <div class="section-label" style="margin-bottom:0.3rem;">Project 2</div>
+        <h2 style="font-size:1.4rem; font-weight:800; letter-spacing:-0.5px;">
+          ClinSight
+        </h2>
       </div>
-      <p style="color:var(--text-muted); margin-bottom:1rem; line-height:1.8;">
-        ClinSight is a healthcare AI platform. I joined the QA effort during the
-        MVP stage, focusing on the authentication flow, OTP verification system,
-        and API reliability.
-      </p>
-      <p style="color:var(--text-muted); margin-bottom:1.5rem; line-height:1.8;">
-        I designed and executed a structured QA test plan covering user signup,
-        OTP verification, password reset, session validation, and API error
-        handling. The plan included entry and exit criteria, a risk-based testing
-        priority framework, and boundary testing for OTP expiration and failed
-        attempt limits.
-      </p>
-      <div class="skills-wrap">
-        <span class="skill-tag">Test Planning</span>
-        <span class="skill-tag">API Testing</span>
-        <span class="skill-tag">Postman</span>
-        <span class="skill-tag">Negative Testing</span>
-        <span class="skill-tag">Boundary Testing</span>
-        <span class="skill-tag">Bug Reporting</span>
-        <span class="skill-tag">Regression Testing</span>
-      </div>
+      <span class="verdict v-pass">MVP Stage</span>
     </div>
+    <p style="color:var(--text-muted); margin-bottom:0.9rem; line-height:1.8;">
+      ClinSight is a healthcare AI platform. I joined during the MVP stage 
+      and focused on the authentication flow and OTP verification system.
+    </p>
+    <p style="color:var(--text-muted); margin-bottom:1.4rem; line-height:1.8;">
+      I wrote a full QA test plan covering user signup, OTP verification, 
+      password reset, session validation, and API error handling. The plan 
+      included entry criteria, exit criteria, a risk priority framework, and 
+      boundary testing for OTP expiration and repeated failed attempts.
+    </p>
+    <div class="skill-list">
+      <span class="skill">Test Planning</span>
+      <span class="skill">API Testing</span>
+      <span class="skill">Postman</span>
+      <span class="skill">Negative Testing</span>
+      <span class="skill">Boundary Testing</span>
+      <span class="skill">Bug Reporting</span>
+    </div>
+  </div>
 
-  </main>
+</main>
 
-  <footer>
-    <p>Oluwadarasimi Olowe · HNG14 QA Engineering ·
-    <a href="https://github.com/lynxqa" target="_blank">github.com/lynxqa</a></p>
-  </footer>
-
+<footer>
+  <p>Oluwadarasimi Olowe &middot; HNG14 QA Engineering &middot;
+  <a href="https://github.com/lynxqa" target="_blank">GitHub</a> &middot;
+  <a href="mailto:oloweoluwadarasimi@gmail.com">oloweoluwadarasimi@gmail.com</a></p>
+</footer>
 </body>
 </html>

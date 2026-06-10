@@ -1,42 +1,24 @@
-// Theme management — light / dark / system
 (function () {
-  const STORAGE_KEY = 'portfolio-theme';
-
-  function getStored() {
-    return localStorage.getItem(STORAGE_KEY);
+  var KEY = 'dara-theme';
+  function get() { return localStorage.getItem(KEY); }
+  function apply(t) {
+    if (!t || t === 'system') document.documentElement.removeAttribute('data-theme');
+    else document.documentElement.setAttribute('data-theme', t);
   }
-
-  function applyTheme(theme) {
-    if (theme === 'system' || !theme) {
-      document.documentElement.removeAttribute('data-theme');
-    } else {
-      document.documentElement.setAttribute('data-theme', theme);
-    }
+  function icon(t) {
+    return t === 'light' ? '☀️' : t === 'dark' ? '🌙' : '💻';
   }
-
-  function updateButton() {
-    const btn = document.getElementById('theme-toggle');
-    if (!btn) return;
-    const stored = getStored() || 'system';
-    const icons = { light: '☀️', dark: '🌙', system: '💻' };
-    btn.textContent = icons[stored] || '💻';
-    btn.title = `Theme: ${stored}. Click to cycle.`;
-  }
-
-  function cycleTheme() {
-    const current = getStored() || 'system';
-    const next = current === 'system' ? 'light' : current === 'light' ? 'dark' : 'system';
-    localStorage.setItem(STORAGE_KEY, next);
-    applyTheme(next);
-    updateButton();
-  }
-
-  // Apply on load immediately (before paint)
-  applyTheme(getStored());
-
+  apply(get());
   document.addEventListener('DOMContentLoaded', function () {
-    updateButton();
-    const btn = document.getElementById('theme-toggle');
-    if (btn) btn.addEventListener('click', cycleTheme);
+    var btn = document.getElementById('theme-btn');
+    if (!btn) return;
+    btn.textContent = icon(get() || 'system');
+    btn.addEventListener('click', function () {
+      var cur = get() || 'system';
+      var next = cur === 'system' ? 'light' : cur === 'light' ? 'dark' : 'system';
+      localStorage.setItem(KEY, next);
+      apply(next);
+      btn.textContent = icon(next);
+    });
   });
 })();
