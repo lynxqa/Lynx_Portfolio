@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journey — Oluwadarasimi Olowe</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="logo">darasimi<span>.qa</span></a>
+      <div class="nav-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="journey.html" class="active">Journey</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="artifacts.html">Artifacts</a></li>
+          <li><a href="plan.html">Future</a></li>
+        </ul>
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">💻</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="eyebrow">Internship Journey</div>
+      <h1>Stage by Stage</h1>
+      <p>This is not a highlight reel. It is what actually happened.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 0</div>
+        <span class="verdict verdict-pass">✓ Pass</span>
+        <h3>The First Filter</h3>
+        <p>Before anything started, they filtered us. This stage was about
+        proving you were serious — analytical thinking, attention to detail,
+        following instructions exactly. I made it through. That was the first
+        sign that QA might actually be the right path for me.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 1</div>
+        <span class="verdict verdict-pass">✓ 75.8 — Pass</span>
+        <h3>Functional Foundations</h3>
+        <p>My first real QA task. I had to write test scenarios, test cases,
+        and bug reports for a user registration feature. I passed, but the
+        feedback was honest — my test steps were too vague, my format was not
+        up to standard, and one of my scenarios was outside the scope entirely.
+        I thought I was doing well. The score humbled me. First lesson:
+        documentation is not just writing things down. It is writing things
+        down so clearly that anyone can reproduce exactly what you did.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-fail"></div>
+        <div class="stage-tag">Stage 2</div>
+        <span class="verdict verdict-fail">✗ 40 — Fail</span>
+        <h3>API Testing & The Postman Mistake</h3>
+        <p>My lowest score in the entire program. We were testing REST APIs
+        using Postman and I submitted a JSON file instead of my Postman
+        collection link. I did not even know the difference at the time.
+        I scored 40. A mentor named Shehasnoname gave us a second chance
+        and I used it. That stage taught me the most basic QA lesson —
+        read the instructions. Twice. Then read them again.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-fail"></div>
+        <div class="stage-tag">Stage 3</div>
+        <span class="verdict verdict-fail">✗ 59.33 — Fail</span>
+        <span class="verdict verdict-premium">⚡ Premium</span>
+        <h3>Automation & Hard Decisions</h3>
+        <p>My code worked. I ran it myself, I knew it did. But on the day
+        of the presentation, Git Bash would not run. I could not demonstrate
+        what I had built. To make it worse, the code ran fine right after
+        the presentation ended. On top of that, I had hardcoded values in
+        my repo instead of using dynamic test data. Two problems at once.
+        I failed the stage. I was not ready to leave so I paid for premium
+        to stay in.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-fail"></div>
+        <div class="stage-tag">Stage 4</div>
+        <span class="verdict verdict-fail">✗ 44.5 — Fail</span>
+        <span class="verdict verdict-premium">⚡ Premium</span>
+        <h3>CI/CD & The AI Lesson</h3>
+        <p>The feedback was blunt and I deserved it. My tests were AI-generated
+        and I had not taken the time to understand them myself. I had not
+        applied the corrections from Stage 3. The mentor said I needed to go
+        back to QA basics. They were right. I was still on premium. But instead
+        of just surviving, I changed my approach completely. No more copying
+        without understanding. From this point on, everything I submitted came
+        from me actually doing the work.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 5</div>
+        <span class="verdict verdict-pass">✓ Pass</span>
+        <h3>Real Team. Real Project. ClinSight.</h3>
+        <p>This was the first stage where I worked inside a real cross-functional
+        team. For the ClinSight MVP, I built a full QA test plan covering
+        authentication, OTP verification, API validation, and session handling —
+        complete with entry criteria, exit criteria, risk assessment, and a
+        structured testing strategy. I was assigned actual tickets, wrote test
+        cases, executed them, and logged defects. It was the closest thing to a
+        real job I had experienced.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 6</div>
+        <span class="verdict verdict-pass">✓ 61 — Pass</span>
+        <h3>Exploratory Testing & A Formatting Wake-Up Call</h3>
+        <p>I passed but the feedback stung. The mentor said my document
+        formatting was poor and that half of QA work is how you present
+        your findings. If it is not properly formatted, it is not good enough
+        — full stop. I had been so focused on finding bugs that I had been
+        neglecting how I communicated them. That feedback changed how I
+        approach every document I touch.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 7</div>
+        <span class="verdict verdict-pass">✓ 60 — Pass</span>
+        <h3>Accessibility & API Security</h3>
+        <p>I submitted 24 accessibility bugs — varied, not duplicates. My best
+        catch was a keyboard tabbing issue where pressing past the Next button
+        could trigger a violation. The mentor called it an excellent find because
+        it combined accessibility, user fairness, and product logic all at once.
+        I also mapped 12 API security issues to OWASP Top 10 categories and
+        built a risk assessment that traced a full attack chain from fake employer
+        registration to possible candidate data exposure.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot dot-pass"></div>
+        <div class="stage-tag">Stage 8</div>
+        <span class="verdict verdict-pass">✓ 65 — Pass</span>
+        <h3>Performance Testing & My Strongest Work</h3>
+        <p>This was my best stage. I ran load, soak, stress, and spike tests
+        using k6. I used Lighthouse for frontend performance analysis. Midway
+        through, I discovered that my original tests had been measuring the
+        wrong path — invalid credentials that returned fast 401s without doing
+        any real login work. I stopped, acknowledged the flaw, re-tested with
+        real authenticated credentials, and corrected my findings. At just 20
+        users the real authenticated flow hit a 5.2s p95. At 150 users it
+        collapsed entirely. After everything — the failures, the premium
+        payments, the honest feedback — finishing strong here meant
+        everything to me.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Oluwadarasimi Olowe · HNG14 QA Engineering ·
+    <a href="https://github.com/lynxqa" target="_blank">github.com/lynxqa</a></p>
+  </footer>
+
+</body>
+</html>
